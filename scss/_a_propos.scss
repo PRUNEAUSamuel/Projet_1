@@ -1,0 +1,67 @@
+@use "variables";
+
+.a_propos {
+    background-color: variables.$orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+
+    div {
+        padding: 40px;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        a {
+            color: white;
+            background-color: black;
+            padding: 10px;
+        }
+    }
+
+    img {
+        height: 50%;
+        width: 100%;
+    }
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+        height: auto;
+        max-height: 600px;
+
+        img {
+            width: 50%;
+            height: 600px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+        }
+
+        div {
+            width: 50%;
+            padding: 200px;
+            text-align: start;
+            align-items: flex-start;
+
+            a {
+                padding: 15px 25px;
+            }
+
+            a:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}

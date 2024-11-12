@@ -1,0 +1,81 @@
+@use "variables";
+
+.form {
+    background-color: variables.$orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        color: white;
+    }
+
+    .form_text {
+        padding: 30px;
+    }
+
+    form {
+        margin: 15px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            margin: 10px 0px 20px 0px;
+            border: 0px;
+            height: 40px;
+            padding: 5px;
+            width: 100%;
+        }
+
+        button {
+            background-color: black;
+            border: 0px;
+            color: white;
+            height: 30px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 2.5em;
+        }
+
+        .form_text {
+            width: 20%;
+            margin-right: 50px;
+            text-align: start;
+        }
+
+        form {
+            width: 20%;
+            margin: 50px 0px 50px 50px;
+            text-align: start;
+
+            input {
+                height: 30px;
+                padding: 0px;
+            }
+        }
+
+        form > div {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .form_unite {
+            margin: 10px 0px;
+            width: 48%;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@use "variables";
+
+.intro {
+    background-image: url(/img/homme-carton-camionnette.webp);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    .intro_title {
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    .intro_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro_container > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .intro_container_first {
+        background-color: black;
+    }
+
+    .intro_container_sec {
+        background-color: variables.$orange;
+        color: black;
+    }
+
+    @media (min-width: 600px) {
+        align-items: flex-start;
+        padding: 100px;
+
+        .intro_title {
+            font-size: 3em;
+            text-align: start;
+            width: 50%;
+        }
+
+        .intro_container > div {
+            padding: 30px;
+            align-items: flex-start;
+            width: 33%;
+
+            h4 {
+                margin-top: 0px;
+            }
+        }
+
+        .intro_container {
+            flex-direction: row;
+        }
+    }
+}

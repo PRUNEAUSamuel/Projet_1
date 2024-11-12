@@ -1,0 +1,13 @@
+@use "variables";
+
+.description {
+    display: flex;
+    flex-direction: column;
+
+    p {margin: 10px;}
+}
+
+.description_title {
+    background-color: variables.$orange;
+    height: 300px;
+}

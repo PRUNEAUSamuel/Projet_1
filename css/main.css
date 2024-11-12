@@ -1,0 +1,471 @@
+body {
+  margin: 0px;
+  font-family: "Helvetica";
+}
+body a {
+  text-decoration: none;
+}
+body a:hover {
+  color: #ff5929;
+}
+body p {
+  margin: 0px;
+}
+body h4 {
+  margin: 10px 0px;
+}
+body ul {
+  list-style-type: none;
+  padding: 0px;
+}
+body button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+body .logo {
+  position: absolute;
+  left: 0px;
+  top: 65px;
+  width: 70px;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 200px;
+}
+header .header_list li {
+  margin: 15px 0px;
+}
+header .header_list li a {
+  color: white;
+}
+header .header_list li a:hover {
+  color: #ff5929;
+}
+header .header_right {
+  background-color: #ff5929;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 70px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+@media (min-width: 600px) {
+  header {
+    height: auto;
+  }
+  header .header_list {
+    display: flex;
+    flex-direction: row;
+  }
+  header .header_list li {
+    margin: 20px;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+  header .header_right {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .logo {
+    top: 0px;
+    height: 100%;
+  }
+}
+
+.intro {
+  background-image: url(/img/homme-carton-camionnette.webp);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.intro .intro_title {
+  text-align: center;
+  font-size: 1.7em;
+}
+.intro .intro_container {
+  display: flex;
+  flex-direction: column;
+}
+.intro .intro_container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+.intro .intro_container_first {
+  background-color: black;
+}
+.intro .intro_container_sec {
+  background-color: #ff5929;
+  color: black;
+}
+@media (min-width: 600px) {
+  .intro {
+    align-items: flex-start;
+    padding: 100px;
+  }
+  .intro .intro_title {
+    font-size: 3em;
+    text-align: start;
+    width: 50%;
+  }
+  .intro .intro_container > div {
+    padding: 30px;
+    align-items: flex-start;
+    width: 33%;
+  }
+  .intro .intro_container > div h4 {
+    margin-top: 0px;
+  }
+  .intro .intro_container {
+    flex-direction: row;
+  }
+}
+
+.a_propos {
+  background-color: #ff5929;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+}
+.a_propos div {
+  padding: 40px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.a_propos div h2 {
+  color: white;
+}
+.a_propos div p {
+  margin-bottom: 40px;
+}
+.a_propos div a {
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+.a_propos img {
+  height: 50%;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .a_propos {
+    flex-direction: row;
+    height: auto;
+    max-height: 600px;
+  }
+  .a_propos img {
+    width: 50%;
+    height: 600px;
+  }
+  .a_propos h2 {
+    font-size: 2.5em;
+  }
+  .a_propos div {
+    width: 50%;
+    padding: 200px;
+    text-align: start;
+    align-items: flex-start;
+  }
+  .a_propos div a {
+    padding: 15px 25px;
+  }
+  .a_propos div a:hover {
+    opacity: 0.7;
+  }
+}
+
+.services {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+}
+.services .services_items {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.services .services_items img {
+  height: 65%;
+  width: 100%;
+}
+.services .services_items div {
+  padding: 10px;
+}
+.services .services_items div button {
+  background-color: #ff5929;
+  padding: 10px 30px;
+  color: black;
+  border: 0px;
+  font-weight: bold;
+  margin: 20px;
+}
+.services .services_container {
+  background-image: url("/img/2hommes-portent-un-meuble.webp");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  color: white;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.services .services_container .services_container_haut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.services .services_container .services_container_bas {
+  display: flex;
+  flex-direction: column;
+}
+.services .services_container .services_container_bas div {
+  display: flex;
+  flex-direction: column;
+}
+.services .services_container .services_container_bas div svg {
+  height: 10px;
+  fill: white;
+  margin-top: 10px;
+}
+.services .services_container .services_container_bas div h3 {
+  margin: 10px;
+}
+.services .services_container .services_container_bas .services_container_bas_first {
+  background-color: black;
+}
+.services .services_container .services_container_bas .services_container_bas_sec {
+  background-color: #ff5929;
+}
+.services .services_container .services_container_bas .services_container_bas_third {
+  background-color: white;
+  color: black;
+}
+.services .services_container .services_container_bas .services_container_bas_third svg {
+  fill: black;
+}
+.services .services_title {
+  margin: 30px 0px;
+}
+.services .services_avis_name {
+  margin: 10px;
+  font-weight: bold;
+}
+.services .services_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+.services .services_list li {
+  height: 70px;
+}
+.services .services_list li img {
+  height: 100%;
+}
+@media (min-width: 600px) {
+  .services {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+  }
+  .services h2 {
+    font-size: 2.5em;
+    grid-column: 1/3;
+    margin-top: 0px;
+  }
+  .services .services_items div {
+    padding: 40px;
+    text-align: start;
+    width: 50%;
+  }
+  .services .services_items div button {
+    margin-left: 0px;
+  }
+  .services .services_container {
+    grid-column: 1/3;
+  }
+  .services .services_container .services_container_bas {
+    flex-direction: row;
+    height: 40%;
+  }
+  .services .services_container .services_container_bas > div {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .services .services_container .services_container_bas > div h3 {
+    width: 50%;
+  }
+  .services .services_title {
+    margin-top: 50px;
+  }
+  .services .services_avis {
+    grid-column: 1/3;
+    width: 50%;
+    margin: 0px 25%;
+  }
+  .services .services_list {
+    grid-column: 1/3;
+    justify-content: space-around;
+  }
+}
+
+.form {
+  background-color: #ff5929;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.form h2 {
+  color: white;
+}
+.form .form_text {
+  padding: 30px;
+}
+.form form {
+  margin: 15px;
+}
+.form form div {
+  display: flex;
+  flex-direction: column;
+}
+.form form input {
+  margin: 10px 0px 20px 0px;
+  border: 0px;
+  height: 40px;
+  padding: 5px;
+  width: 100%;
+}
+.form form button {
+  background-color: black;
+  border: 0px;
+  color: white;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+@media (min-width: 600px) {
+  .form {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .form h2 {
+    font-size: 2.5em;
+  }
+  .form .form_text {
+    width: 20%;
+    margin-right: 50px;
+    text-align: start;
+  }
+  .form form {
+    width: 20%;
+    margin: 50px 0px 50px 50px;
+    text-align: start;
+  }
+  .form form input {
+    height: 30px;
+    padding: 0px;
+  }
+  .form form > div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .form .form_unite {
+    margin: 10px 0px;
+    width: 48%;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+.description p {
+  margin: 10px;
+}
+
+.description_title {
+  background-color: #ff5929;
+  height: 300px;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+footer div {
+  margin: 15px 0px;
+}
+footer .logo {
+  position: static;
+}
+footer a {
+  color: white;
+}
+footer .ressources {
+  display: flex;
+  flex-direction: column;
+}
+footer .ressources svg {
+  fill: white;
+  height: 30px;
+  margin: 10px;
+}
+@media (min-width: 600px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: start;
+    align-items: flex-start;
+  }
+  footer div {
+    margin-top: 30px;
+  }
+  footer .footer_haut {
+    margin-bottom: 20px;
+  }
+  footer .footer_haut_nd {
+    margin-bottom: 40px;
+  }
+  footer .footer_haut_third {
+    margin-bottom: 100px;
+  }
+}/*# sourceMappingURL=main.css.map */

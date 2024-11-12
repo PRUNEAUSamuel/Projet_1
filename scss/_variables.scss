@@ -1,0 +1,10 @@
+$orange: #ff5929;
+
+@mixin lire-plus {
+    background-color: $orange;
+    padding: 10px 30px;
+    color: black;
+    border: 0px;
+    font-weight: bold;
+    margin: 20px;
+}
