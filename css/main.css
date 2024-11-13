@@ -421,6 +421,65 @@ header .header_right {
 .description_title {
   background-color: #ff5929;
   height: 300px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description_title h1 {
+  width: 50%;
+}
+
+.description_text {
+  padding: 30px;
+  background-color: #f7f7f7;
+}
+
+.fonctionnement {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px 0px;
+}
+.fonctionnement h2 {
+  padding: 40px 0px;
+  margin-bottom: 0px;
+  border-top: 1px solid black;
+}
+.fonctionnement .fonctionnement_container {
+  display: flex;
+  flex-direction: column;
+}
+.fonctionnement .fonctionnement_container svg {
+  height: 10px;
+}
+.fonctionnement .fonctionnement_container .etape_1 {
+  background-color: black;
+  color: white;
+}
+.fonctionnement .fonctionnement_container .etape_1 svg {
+  fill: #ff5929;
+}
+.fonctionnement .fonctionnement_container .etape_2 {
+  background-color: white;
+}
+.fonctionnement .fonctionnement_container .etape_4 {
+  background-color: #ff5929;
+}
+.fonctionnement .fonctionnement_container .etape_4 svg {
+  fill: white;
+}
+.fonctionnement .fonctionnement_container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.fonctionnement .fonctionnement_container div h3 {
+  margin: 0px;
+}
+.fonctionnement .fonctionnement_container div svg {
+  margin-bottom: 10px;
 }
 
 footer {

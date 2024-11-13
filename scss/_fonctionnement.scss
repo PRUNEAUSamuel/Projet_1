@@ -1,0 +1,59 @@
+@use "variables";
+
+.fonctionnement {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px 0px;
+
+    h2 {
+        padding: 40px 0px;
+        margin-bottom: 0px;
+        border-top: 1px solid black;
+    }
+
+    .fonctionnement_container {
+        display: flex;
+        flex-direction: column;
+
+        svg {
+            height: 10px;
+        }
+
+        .etape_1 {
+            background-color: black;
+            color: white;
+
+            svg {
+                fill: variables.$orange;
+            }
+        }
+
+        .etape_2 {
+            background-color: white;
+        }
+
+        .etape_4 {
+            background-color: variables.$orange;
+
+            svg {
+                fill: white;
+            }
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+
+            h3 {
+                margin: 0px;
+            }
+
+            svg {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

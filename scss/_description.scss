@@ -10,4 +10,18 @@
 .description_title {
     background-color: variables.$orange;
     height: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        width: 50%;
+
+    }
+}
+
+.description_text {
+    padding: 30px;
+    background-color: #f7f7f7;
 }
